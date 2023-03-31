@@ -40,8 +40,9 @@ const HP292024G = () => {
           <p>Up to three OpenFlow controllers control each OpenFlow instance and each generates OpenFlow commands and data flows between an OpenFlow switch and the controller.</p>
           <h3>Configuration</h3>
           <ul>
-            <li><Link to="#">HP 2920-24G Current Configuration</Link></li>
-            <li><Link to="#">HP 2920-24G Default Configuration</Link> - This can be compared with the current configuration to identify changes from default
+            <li><Link to="https://github.com/UHM-SCADA-Lab/Network/blob/main/LocalSwitchConfig.txt">HP 2920-24G Current Configuration (Local)</Link></li>
+            <li><Link to="https://github.com/UHM-SCADA-Lab/Network/blob/main/RemoteSwitchConfig.txt">HP 2920-24G Current Configuration (Remote)</Link></li>
+            <li><Link to="https://github.com/UHM-SCADA-Lab/Network/blob/main/DefaultConfig.txt">HP 2920-24G Default Configuration</Link> - This can be compared with the current configuration to identify changes from default
             </li>
           </ul>
           <h3>Useful Commands</h3>
