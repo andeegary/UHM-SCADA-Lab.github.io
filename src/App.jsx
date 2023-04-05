@@ -23,6 +23,7 @@ import RedTeamSEL from './departments/RedTeamSEL/RedTeamSEL';
 import LogStash from './departments/LogStash';
 import Legacy from './pages/Legacy';
 import RF from './departments/RF';
+import Future from './pages/Future';
 
 const App = () => (
   <Router>
@@ -37,6 +38,7 @@ const App = () => (
         <Route path="/toDoList" element={<ToDoList />} />
         <Route path="/equipmentList" element={<EquipmentList />} />
         <Route path="/configuration" element={<Configuration />} />
+        <Route path="/future" element={<Future />} />
 
         {/* Department Pages */}
         <Route path="/departments" element={<Departments />} />
