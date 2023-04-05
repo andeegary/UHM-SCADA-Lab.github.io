@@ -20,6 +20,7 @@ const KnowledgeManagement = () => (
     <h3>Additional Resources</h3>
     <ul>
       <li><Link to="https://react-bootstrap.netlify.app">React Bootstrap Documentation</Link></li>
+      <li><Link to="https://nodejs.org/en">Node.js Website</Link></li>
       <li><Link to="https://www.freecodecamp.org/learn/responsive-web-design/#basic-html-and-html5">freeCodeCamp HTML/CSS Tutorials</Link></li>
       <li><Link to="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/#basic-javascript">freeCodeCamp JavaScript Tutorials</Link></li>
     </ul>
@@ -89,10 +90,11 @@ export default App;
     <pre>{'   <Link to="/PATH">Link to Page</Link>'}</pre>
     <p>which will appear as <Link to="/PATH">Link to Page</Link>.</p>
     <h3 className="pt-2">Previewing a Page in React (under construction)</h3>
+    <p>Before you proceed, you will need to install Node.js, which is an open source server environment that we will use to preview and deploy our website. You can download the latest installer for your device <Link to="https://nodejs.org/en/download">here</Link>.</p>
     <p>When you want to preview a website page on your local device for the first time, you will need to open up a new terminal window within the repository folder. You can do this within Intellij by going to <em>View &gt; Tool Windows &gt; Terminal</em> or by pressing <em>Alt + F12</em>.</p>
     <img style={{ width: '100%', maxWidth: '800px' }} src="/images/KnowledgeManagement/terminal.png" alt="How to open terminal" />
     <p className="pt-2">Alternatively, you can open the folder within Git Bash or your program of choice.</p>
-    <p>You will then have to run </p>
+    <p>You will then have to run <code>npm install</code> to install any relevant files needed to run the website&apos;s React application.</p>
     <h3 className="pt-2">React Bootstrap Tips</h3>
     <p>Important note: Borders and titles are added for visualization purposes.</p>
     <h4>Grid Layout</h4>
