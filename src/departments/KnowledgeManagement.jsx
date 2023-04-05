@@ -23,12 +23,14 @@ const KnowledgeManagement = () => (
       <li><Link to="https://www.freecodecamp.org/learn/responsive-web-design/#basic-html-and-html5">freeCodeCamp HTML/CSS Tutorials</Link></li>
       <li><Link to="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/#basic-javascript">freeCodeCamp JavaScript Tutorials</Link></li>
     </ul>
+    <hr />
+    <h2>User Guides</h2>
     <h3 className="pt-3">Updating a Fork</h3>
     <p>To ensure that your fork is up to date, click <em>Sync fork</em> on your fork&apos;s Github page to retrieve any changes from the main repo to your fork.</p>
     <img style={{ width: '100%', maxWidth: '800px' }} src="/images/KnowledgeManagement/syncfork.png" alt="Sync Fork" />
-    <p>On Github Desktop, open your forked repository and make sure to click <em>Fetch origin</em> (or <em>Fetch upstream</em>, depending on your setup). This will update your local copy of the repository with all the latest changes.</p>
+    <p className="pt-2">On Github Desktop, open your forked repository and make sure to click <em>Fetch origin</em> (or <em>Fetch upstream</em>, depending on your setup). This will update your local copy of the repository with all the latest changes.</p>
     <img style={{ width: '100%', maxWidth: '600px' }} src="/images/KnowledgeManagement/fetchUpstream.png" alt="Fetch Upstream" />
-    <h3 className="pt-3">Creating a New Page</h3>
+    <h3 className="pt-4">Creating a New Page</h3>
     <p><u>BEFORE ADDING ANY CHANGES, PLEASE MAKE SURE YOUR FORK IS UP TO DATE WITH THE MAIN REPOSITORY.</u> This ensures that there will be minimal merge conflicts when the webmaster approves your updates.</p>
     <p>Once you have verified that your fork and local copy are up to date, you can begin making edits. To add a new page to the website, create a new file <code>FILENAME.jsx</code> and store it in the appropriate directory. For example,
       this page is found in the <code>KnowledgeManagement.jsx</code> file in the <code>src/departments/</code> directory.
@@ -86,7 +88,12 @@ export default App;
     </p>
     <pre>{'   <Link to="/PATH">Link to Page</Link>'}</pre>
     <p>which will appear as <Link to="/PATH">Link to Page</Link>.</p>
-    <h3>React Bootstrap Tips</h3>
+    <h3 className="pt-2">Previewing a Page in React (under construction)</h3>
+    <p>When you want to preview a website page on your local device for the first time, you will need to open up a new terminal window within the repository folder. You can do this within Intellij by going to <em>View &gt; Tool Windows &gt; Terminal</em> or by pressing <em>Alt + F12</em>.</p>
+    <img style={{ width: '100%', maxWidth: '800px' }} src="/images/KnowledgeManagement/terminal.png" alt="How to open terminal" />
+    <p className="pt-2">Alternatively, you can open the folder within Git Bash or your program of choice.</p>
+    <p>You will then have to run </p>
+    <h3 className="pt-2">React Bootstrap Tips</h3>
     <p>Important note: Borders and titles are added for visualization purposes.</p>
     <h4>Grid Layout</h4>
     <Row className="justify-content-center pb-3">
@@ -189,6 +196,10 @@ export default App;
         </Row>
       </Col>
     </Row>
+    <hr />
+    <h2>Administrator Guides</h2>
+    <h3 className="pt-3">Publishing New Changes</h3>
+    <p><em>Under construction</em></p>
   </Container>
 );
 
