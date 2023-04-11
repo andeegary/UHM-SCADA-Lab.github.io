@@ -20,15 +20,18 @@ const KnowledgeManagement = () => (
     <h3>Additional Resources</h3>
     <ul>
       <li><Link to="https://react-bootstrap.netlify.app">React Bootstrap Documentation</Link></li>
+      <li><Link to="https://nodejs.org/en">Node.js Website</Link></li>
       <li><Link to="https://www.freecodecamp.org/learn/responsive-web-design/#basic-html-and-html5">freeCodeCamp HTML/CSS Tutorials</Link></li>
       <li><Link to="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/#basic-javascript">freeCodeCamp JavaScript Tutorials</Link></li>
     </ul>
+    <hr />
+    <h2>User Guides</h2>
     <h3 className="pt-3">Updating a Fork</h3>
     <p>To ensure that your fork is up to date, click <em>Sync fork</em> on your fork&apos;s Github page to retrieve any changes from the main repo to your fork.</p>
     <img style={{ width: '100%', maxWidth: '800px' }} src="/images/KnowledgeManagement/syncfork.png" alt="Sync Fork" />
-    <p>On Github Desktop, open your forked repository and make sure to click <em>Fetch origin</em> (or <em>Fetch upstream</em>, depending on your setup). This will update your local copy of the repository with all the latest changes.</p>
+    <p className="pt-2">On Github Desktop, open your forked repository and make sure to click <em>Fetch origin</em> (or <em>Fetch upstream</em>, depending on your setup). This will update your local copy of the repository with all the latest changes.</p>
     <img style={{ width: '100%', maxWidth: '600px' }} src="/images/KnowledgeManagement/fetchUpstream.png" alt="Fetch Upstream" />
-    <h3 className="pt-3">Creating a New Page</h3>
+    <h3 className="pt-4">Creating a New Page</h3>
     <p><u>BEFORE ADDING ANY CHANGES, PLEASE MAKE SURE YOUR FORK IS UP TO DATE WITH THE MAIN REPOSITORY.</u> This ensures that there will be minimal merge conflicts when the webmaster approves your updates.</p>
     <p>Once you have verified that your fork and local copy are up to date, you can begin making edits. To add a new page to the website, create a new file <code>FILENAME.jsx</code> and store it in the appropriate directory. For example,
       this page is found in the <code>KnowledgeManagement.jsx</code> file in the <code>src/departments/</code> directory.
@@ -86,7 +89,18 @@ export default App;
     </p>
     <pre>{'   <Link to="/PATH">Link to Page</Link>'}</pre>
     <p>which will appear as <Link to="/PATH">Link to Page</Link>.</p>
-    <h3>React Bootstrap Tips</h3>
+    <h3 className="pt-2">Previewing a Page in React</h3>
+    <p>Before you proceed, you will need to install Node.js, which is an open source server environment that we will use to preview and deploy our website. You can download the latest installer for your device <Link to="https://nodejs.org/en/download">here</Link>.</p>
+    <p>When you want to preview a website page on your local device for the first time, you will need to open up a new terminal window within the repository folder. You can do this within Intellij by going to <em>View &gt; Tool Windows &gt; Terminal</em> or by pressing <em>Alt + F12</em>.</p>
+    <img style={{ width: '100%', maxWidth: '800px' }} src="/images/KnowledgeManagement/terminal.png" alt="How to open terminal" />
+    <p className="pt-2">Alternatively, you can open the folder within Git Bash or your program of choice.</p>
+    <p>You will then have to run <code>npm install</code> to install any relevant files needed to run the website&apos;s React application. If the command is successful, you should see a message similar to this:</p>
+    <img style={{ width: '100%', maxWidth: '600px' }} src="/images/KnowledgeManagement/npm_install.PNG" alt="npm install" />
+    <p className="pt-2">Now that all the necessary files have been installed, run <code>npm start</code> to compile and start up the application. It should look similar to the image below.</p>
+    <img style={{ width: '100%', maxWidth: '800px' }} src="/images/KnowledgeManagement/npm_start.png" alt="npm start" />
+    <p className="pt-2">You should now see a live preview of your website! You should either see a new tab open in your browser that displays the application, or you can visit the URL listed in the console (in the case of the example below, the URL is <code>http://localhost:3000</code>).</p>
+    <img style={{ width: '100%', maxWidth: '800px' }} src="/images/KnowledgeManagement/react_preview.PNG" alt="React preview" />
+    <h3 className="pt-4">React Bootstrap Tips</h3>
     <p>Important note: Borders and titles are added for visualization purposes.</p>
     <h4>Grid Layout</h4>
     <Row className="justify-content-center pb-3">
@@ -189,6 +203,11 @@ export default App;
         </Row>
       </Col>
     </Row>
+    <hr />
+    <h2>Administrator Guides</h2>
+    <h3 className="pt-3">Publishing New Changes</h3>
+    <p>After any updates have been pushed to the repository, Github Pages also needs to be updated by the administrator so that the changes are visible on the website. To do this, run <code>npm run deploy</code> in the terminal. <em>Don&apos;t forget that Node.js should be installed on your device and that </em><code>npm install</code> <em>should have already been run!</em></p>
+    <img style={{ width: '100%', maxWidth: '600px' }} src="/images/KnowledgeManagement/npm_deploy.PNG" alt="Output when deploying website" />
   </Container>
 );
 

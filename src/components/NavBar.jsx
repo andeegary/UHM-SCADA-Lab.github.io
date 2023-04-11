@@ -41,6 +41,7 @@ const NavBar = () => (
             <NavDropdown.Item href="/#/departments">All Departments</NavDropdown.Item>
           </NavDropdown>
           <Nav.Link href="/#/legacy">Legacy</Nav.Link>
+          <Nav.Link href="/#/future">Future</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Container>

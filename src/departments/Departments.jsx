@@ -73,8 +73,8 @@ const Departments = () => (
     <Row>
       <Col className="text-center py-4">
         <Link to="/logStash">
-          <img src="/images/" alt="Log Stash Department" />
-          <h1><Badge bg="secondary">Log Stash</Badge></h1>
+          <img src="/images/" alt="Logstash Department" />
+          <h1><Badge bg="secondary">Logstash</Badge></h1>
         </Link>
       </Col>
     </Row>

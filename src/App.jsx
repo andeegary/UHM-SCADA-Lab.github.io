@@ -16,13 +16,14 @@ import SystemAdmin from './departments/SystemAdmin/SystemAdmin';
 import KnowledgeManagement from './departments/KnowledgeManagement';
 import SNMPNOC from './departments/SNMPNOC';
 import SFlowSDN from './departments/SFlowSDN/SFlowSDN';
-import MLCurriculum from './departments/MLCurriculum';
+import MLCurriculum from './departments/MLCurriculum/MLCurriculum';
 import HCI from './departments/HCI';
 import Database from './departments/Database';
 import RedTeamSEL from './departments/RedTeamSEL/RedTeamSEL';
 import LogStash from './departments/LogStash';
 import Legacy from './pages/Legacy';
 import RF from './departments/RF';
+import Future from './pages/Future';
 
 const App = () => (
   <Router>
@@ -37,6 +38,7 @@ const App = () => (
         <Route path="/toDoList" element={<ToDoList />} />
         <Route path="/equipmentList" element={<EquipmentList />} />
         <Route path="/configuration" element={<Configuration />} />
+        <Route path="/future" element={<Future />} />
 
         {/* Department Pages */}
         <Route path="/departments" element={<Departments />} />
