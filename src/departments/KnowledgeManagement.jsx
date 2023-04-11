@@ -96,9 +96,10 @@ export default App;
     <p className="pt-2">Alternatively, you can open the folder within Git Bash or your program of choice.</p>
     <p>You will then have to run <code>npm install</code> to install any relevant files needed to run the website&apos;s React application. If the command is successful, you should see a message similar to this:</p>
     <img style={{ width: '100%', maxWidth: '800px' }} src="/images/KnowledgeManagement/npm_install.PNG" alt="npm install" />
-    <p className="pt-2">Now that all the necessary files have been installed, you only have to run <code>npm start</code> to compile and start up the application. It should look similar to the image below.</p>
+    <p className="pt-2">Now that all the necessary files have been installed, run <code>npm start</code> to compile and start up the application. It should look similar to the image below.</p>
     <img style={{ width: '100%', maxWidth: '800px' }} src="/images/KnowledgeManagement/npm_start.png" alt="npm start" />
-    <p className="pt-2">You should now see a live preview of your website! You should either see a new tab open in your browser that displays the application, or you can visit the URL listed in the console (In the case of the example screenshot above, the URL is <code>http://localhost:3000</code>).</p>
+    <p className="pt-2">You should now see a live preview of your website! You should either see a new tab open in your browser that displays the application, or you can visit the URL listed in the console (in the case of the example below, the URL is <code>http://localhost:3000</code>).</p>
+    <img style={{ width: '100%', maxWidth: '800px' }} src="/images/KnowledgeManagement/react_preview.PNG" alt="React preview" />
     <h3 className="pt-2">React Bootstrap Tips</h3>
     <p>Important note: Borders and titles are added for visualization purposes.</p>
     <h4>Grid Layout</h4>
@@ -205,7 +206,6 @@ export default App;
     <hr />
     <h2>Administrator Guides</h2>
     <h3 className="pt-3">Publishing New Changes</h3>
-    <p><em>Under construction</em></p>
   </Container>
 );
 
