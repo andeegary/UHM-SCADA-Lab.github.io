@@ -16,7 +16,7 @@ import SystemAdmin from './departments/SystemAdmin/SystemAdmin';
 import KnowledgeManagement from './departments/KnowledgeManagement';
 import SNMPNOC from './departments/SNMPNOC';
 import SFlowSDN from './departments/SFlowSDN/SFlowSDN';
-import MLCurriculum from './departments/MLCurriculum';
+import MLCurriculum from './departments/MLCurriculum/MLCurriculum';
 import HCI from './departments/HCI';
 import Database from './departments/Database';
 import RedTeamSEL from './departments/RedTeamSEL/RedTeamSEL';
