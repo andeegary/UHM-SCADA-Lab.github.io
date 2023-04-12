@@ -8,30 +8,30 @@ const ActiveDirectory = () => (
     <h5>Note: DHCP is currently enabled for only VLAN 3 and VLAN 4 (as of Apr 2023). Refer to the network map for more information.</h5>
     <ol>
       <li>Open Server Manager. </li>
-      <li>On the top right under “Tools”, click on DHCP.</li>
-      <li>On the left window, navigate to: win-surf.scada.lab > IPv4</li>
+      <li>On the top right under &quot;Tools&quot;, click on DHCP.</li>
+      <li>On the left window, navigate to: win-surf.scada.lab &gt; IPv4</li>
       <li>Double click the scope you wish to set up static IP address (i.e. 10.1.44.0).</li>
-      <li>Double click on “Reservations”.</li>
-      <li>On the rightmost window, click on “More Actions” and select “New Reservation”.</li>
-      <li>Enter the hostname of the device under the “Reservation name” field.</li>
+      <li>Double click on &quot;Reservations&quot;.</li>
+      <li>On the rightmost window, click on &quot;More Actions&quot; and select &quot;New Reservation&quot;.</li>
+      <li>Enter the hostname of the device under the &quot;Reservation name&quot; field.</li>
       <li>Enter the desired static ip address of the device you wish to add.</li>
       <li>Enter the MAC address of the device to be added (i.e. 00-B0-D0-63-C2-26).</li>
       <li>Add appropriate description of the device (If applicable).</li>
-      <li>Choose “DHCP” under “supported types”.</li>
-      <li>When finished, click on the “Add” button.</li>
-      <li>Make sure to update the "SCADA_Switch Ports,IPs,VLANs" spreadsheet.</li>
+      <li>Choose &quot;DHCP&quot; under &quot;supported types&quot;.</li>
+      <li>When finished, click on the &quot;Add&quot; button.</li>
+      <li>Make sure to update the &quot;SCADA_Switch Ports,IPs,VLANs&quot; spreadsheet.</li>
     </ol>
     <h3>How to set up DNS Lookup</h3>
     <h5>On windows directory side:</h5>
     <ol>
       <li> Open Server Manager.</li>
-      <li>On the top right under “Tools”, click on DNS.</li>
+      <li>On the top right under &quot;Tools&quot;, click on DNS.</li>
       <li>On the left panel, right click on  WIN-SURF &gt; Forward Lookup Zones &gt; SCADA.lab</li>
-      <li> Click on “New Host (A or AAAA)...</li>
-      <li>Under the “Name” parameter, enter the hostname of the device you wish to add.</li>
-      <li>Under “IP address”, enter the IP address of the device you wish to add. </li>
-      <li>Check the “Create associated (PTR) record”.</li>
-      <li>When you’re done, click on “Add Host”.</li>
+      <li> Click on &quot;New Host (A or AAAA)...&quot;</li>
+      <li>Under the &quot;Name&quot; parameter, enter the hostname of the device you wish to add.</li>
+      <li>Under &quot;IP address&quot;, enter the IP address of the device you wish to add. </li>
+      <li>Check the &quot;Create associated (PTR) record&quot;.</li>
+      <li>When you’re done, click on &quot;Add Host&quot;.</li>
     </ol>
     <h5>On raspberry pi side:</h5>
     <ol>
