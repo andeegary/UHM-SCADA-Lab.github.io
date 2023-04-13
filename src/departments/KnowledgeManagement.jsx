@@ -94,7 +94,7 @@ export default App;
     <p>When you want to preview a website page on your local device for the first time, you will need to open up a new terminal window within the repository folder. You can do this within Intellij by going to <em>View &gt; Tool Windows &gt; Terminal</em> or by pressing <em>Alt + F12</em>.</p>
     <img style={{ width: '100%', maxWidth: '800px' }} src="/images/KnowledgeManagement/terminal.png" alt="How to open terminal" />
     <p className="pt-2">Alternatively, you can open the folder within Git Bash or your program of choice.</p>
-    <p>You will then have to run <code>npm install</code> to install any relevant files needed to run the website&apos;s React application. If the command is successful, you should see a message similar to this:</p>
+    <p>You will then have to run <code>npm install</code> to install any relevant files needed to run the website&apos;s React application. <em>This command only needs to be run when you are previewing the website for the first time!</em> If it is successful, you should see a message similar to this:</p>
     <img style={{ width: '100%', maxWidth: '600px' }} src="/images/KnowledgeManagement/npm_install.PNG" alt="npm install" />
     <p className="pt-2">Now that all the necessary files have been installed, run <code>npm start</code> to compile and start up the application. It should look similar to the image below.</p>
     <img style={{ width: '100%', maxWidth: '800px' }} src="/images/KnowledgeManagement/npm_start.png" alt="npm start" />
