@@ -45,6 +45,17 @@ const Miscellaneous = () => (
         <Link to="https://www.raspberrypi.com/documentation/">Raspberry Pi Documentation</Link>
       </li>
     </ul>
+    <h3>Setting Static IP - NEEDS TO BE UPDATED</h3>
+    <ul>
+      <li>navigate to /etc/network</li>
+      <li>open and edit interfaces file</li>
+      <li>add the following</li>
+      <li>allow-hotplug eth0</li>
+      <li>iface eth0 inet static</li>
+      <li>address set static here</li>
+      <li>netmask 255.255.255.0</li>
+      <li>gateway 10.1.1.1</li>
+    </ul>
   </span>
 );
 
