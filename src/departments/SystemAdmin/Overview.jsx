@@ -6,40 +6,40 @@ const Overview = () => (
   <span>
     <h3>Welcome</h3>
     <p>The System Administration department is responsible for the upkeep, configuration, and maintenance of Raspberry Pis and Servers. We are also responsible for assisting other departments in troubleshooting and rolling out patches to the Raspberry Pis.</p>
+    <p>Our team is currently made up of two EE496 students and one EE396 student.</p>
     <Row>
-      <Col>
-        <h3>Useful and Important Information</h3>
-        <ul>
-          <li>IP addresses ending in 100-199 are assigned by the router(DHCP)</li>
-          <li>VLAN&apos;s and their IP addresses</li>
-          <ul>
-            <li>VLAN 1 = 10.1.1.x</li>
-            <li>VLAN 2 = 10.1.88.x</li>
-            <li>VLAN 3 = 10.1.44.x</li>
-            <li>VLAN 4 = 10.1.66.x</li>
-          </ul>
-          <li>Description of Pi</li>
-          <ul>
-            <li>Model: Raspberry Pi 3 Model B v1.2</li>
-            <li>OS: Raspian GNU/Linux 11 (bullseye)</li>
-            <li>IP Range: 10.1.1.100 to 10.1.1.199</li>
-          </ul>
-          <li>Document Everything!</li>
-        </ul>
-      </Col>
       <Col>
         <h3>Current Tasks</h3>
         <ul>
-          <li>Bring up servers</li>
+          <li>Work on Active Directory</li>
           <ul>
-            <li>Need to figure out where we left off</li>
-            <li>For DHCP, each VLAN will need a server</li>
+            <li>Implement Single Sign-on (SSO) using a Pluggable authentication module (PAM) module and Lightweight Directory Access Protocol (LDAP)</li>
+          </ul>
+          <li>Assist the network department in rolling out SNMP related configuration</li>
+          <li>Work on Deliverables</li>
+          <ul>
+            <li>Work on powerpoint slides</li>
+            <li>Work on the website</li>
+          </ul>
+        </ul>
+      </Col>
+      <Col>
+        <h3>Equipment</h3>
+        <ul>
+          <li>Mac Mini (2018) - 6-Core Intel Core i7, 32GB Memory, 2TB SSD Storage</li>
+          <ul>
+            <li>VMware Fusion</li>
             <ul>
-              <li>This is what was being worked on at the end of last semester, subject to change</li>
-              <li>VLAN 1 is from the WiFi Router</li>
-              <li>VLAN 2 is from the &apos;Servers&apos; pi (not fully sure)</li>
-              <li>VLAN 3 is from the &apos;QTpi-4&apos; pi (from SCADA_Switch Ports/IPs/VLANs spreadsheet, I believe it was talking to &apos;Servers&apos; pi aswell)</li>
+              <li>ArchLinux</li>
+              <li>Castle (Debian)</li>
+              <li>Windows Server 2022</li>
+              <li>Windows 11</li>
             </ul>
+          </ul>
+          <li>Raspberry Pi 3</li>
+          <ul>
+            <li>18 Active Pis</li>
+            <li>4 Reserve Pis</li>
           </ul>
         </ul>
       </Col>
