@@ -4,11 +4,10 @@ import Overview from './Overview';
 import Inventory from './Inventory';
 import PiBringUp from './PiBringUp';
 import MultiHoming from './MultiHoming';
-import DHCPServer from './DHCPServer';
-import DNSServer from './DNSServer';
 import Miscellaneous from './Miscellaneous';
 import ActiveDirectory from './ActiveDirectory';
 import GitHubTutorial from './GitHubTutorial';
+import Legacy from './Legacy';
 
 const SystemAdmin = () => (
   <Container id="SystemAdmin" className="py-3">
@@ -26,12 +25,6 @@ const SystemAdmin = () => (
       <Tab eventKey="multiHoming" title="MultiHoming" className="py-4">
         <MultiHoming />
       </Tab>
-      <Tab eventKey="DHCPServer" title="DHCP Server" className="py-4">
-        <DHCPServer />
-      </Tab>
-      <Tab eventKey="DNSServer" title="DNS Server" className="py-4">
-        <DNSServer />
-      </Tab>
       <Tab eventKey="ActiveDirectory" title="Active Directory" className="py-4">
         <ActiveDirectory />
       </Tab>
@@ -40,6 +33,9 @@ const SystemAdmin = () => (
       </Tab>
       <Tab eventKey="Miscellaneous" title="Miscellaneous" className="py-4">
         <Miscellaneous />
+      </Tab>
+      <Tab eventKey="Legacy" title="Legacy" className="py-4">
+        <Legacy />
       </Tab>
     </Tabs>
   </Container>
