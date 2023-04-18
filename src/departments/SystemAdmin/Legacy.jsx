@@ -58,12 +58,12 @@ const Legacy = () => (
     <ol>
       <li>Add zone information to configuration file (Defining the zone)</li>
       <ul>
-        <img src="/images/SystemAdmin/DNSServer_zoneConfig.png" alt="Zone Config" style={{ width: '100%', maxWidth: '375px' }} />
+        <img src="/images/SystemAdmin/DNSServer_zoneConfig.png" alt="Zone Config" style={{ maxWidth: '375px' }} />
       </ul>
       <li>After saving the change, restart the service and run &apos;systemctl reload bind9&apos;</li>
       <li>Create db.&lt;zone name&gt; file</li>
       <ul>
-        <img src="/images/SystemAdmin/DNSServer_zoneName.png" alt="Zone Name" style={{ width: '100%', maxWidth: '375px' }} />
+        <img src="/images/SystemAdmin/DNSServer_zoneName.png" alt="Zone Name" style={{ maxWidth: '375px' }} />
         <p>note: The bottom of the file is the DNS records. The format of a record: hostname &lt;tab&gt; class &lt;tab&gt; DNS record type &lt;tab&gt; value</p>
       </ul>
       <li>Restart the rndc and run &apos;sudo rndc reload&apos;</li>

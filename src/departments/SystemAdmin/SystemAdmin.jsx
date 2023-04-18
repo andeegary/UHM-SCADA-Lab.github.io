@@ -10,7 +10,7 @@ import GitHubTutorial from './GitHubTutorial';
 import Legacy from './Legacy';
 
 const SystemAdmin = () => (
-  <Container id="SystemAdmin" className="py-3">
+  <Container className="py-3">
     <h1>Linux System Admin</h1>
     <Tabs defaultActiveKey="overview">
       <Tab eventKey="overview" title="Overview" className="py-4">
