@@ -2,7 +2,7 @@ import React from 'react';
 
 const OverallGoal = () => (
   <span>
-    <h2>Overall Goal</h2>
+    <h3>Overall Goal</h3>
     <p>
       Very vaguely, we want to use some machine learning technique to interact with our lab&apos;s SDN (Software Defined Networking) controller to allow or deny network traffic flows.<br />
       <br />
@@ -10,7 +10,7 @@ const OverallGoal = () => (
       <br />
       These network flow requests come from a physical network switch, that has been configured to interact with an SDN controller, which, in our setup, is simply a Raspberry Pi running a Python script. So, whenever this controller receives a flow request from the switch, it will send it to some machine learning model that will return an ALLOW or a DENY ruling for that type of traffic.<br />
       <br />
-      This machine learning algorithm will probably be a neural network, that will be trained using various data points  <br />
+      This machine learning algorithm will probably be a neural network, that will be trained using various data points as described in the Zero Trust tab.<br />
     </p>
   </span>
 );
