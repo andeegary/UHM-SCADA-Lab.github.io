@@ -5,7 +5,7 @@ import Inventory from './Inventory';
 import PiBringUp from './PiBringUp';
 import MultiHoming from './MultiHoming';
 import Miscellaneous from './Miscellaneous';
-import ActiveDirectory from './ActiveDirectory';
+import WindowsServer from './WindowsServer';
 import GitHubTutorial from './GitHubTutorial';
 import Legacy from './Legacy';
 
@@ -25,8 +25,8 @@ const SystemAdmin = () => (
       <Tab eventKey="multiHoming" title="MultiHoming" className="py-4">
         <MultiHoming />
       </Tab>
-      <Tab eventKey="ActiveDirectory" title="Active Directory" className="py-4">
-        <ActiveDirectory />
+      <Tab eventKey="WindowsServer" title="Windows Server" className="py-4">
+        <WindowsServer />
       </Tab>
       <Tab eventKey="GitHubTutorial" title="GitHub Tutorial" className="py-4">
         <GitHubTutorial />
