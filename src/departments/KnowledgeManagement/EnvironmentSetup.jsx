@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const EnvironmentSetup = () => (
   <span>
-    <p>Note: You only need to do this process once</p>
+    <p><em><u>Note: You only need to do this process once!</u></em></p>
     <h3>Install Repo on Local Machine</h3>
     <ol>
       <h5><li>Open the SCADA Lab Repo</li></h5>

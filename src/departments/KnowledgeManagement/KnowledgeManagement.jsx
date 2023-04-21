@@ -3,6 +3,7 @@ import { Container, Tab, Tabs } from 'react-bootstrap';
 import Prerequisites from './Prerequisites';
 import EnvironmentSetup from './EnvironmentSetup';
 import Overview from './Overview';
+import WhyReact from './React';
 
 const KnowledgeManagement = () => (
   <Container className="py-3">
@@ -16,6 +17,9 @@ const KnowledgeManagement = () => (
       </Tab>
       <Tab eventKey="environmentSetup" title="Environment Setup" className="py-4">
         <EnvironmentSetup />
+      </Tab>
+      <Tab eventKey="whyReact" title="React" className="py-4">
+        <WhyReact />
       </Tab>
     </Tabs>
   </Container>

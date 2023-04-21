@@ -44,11 +44,11 @@ const SEL311BConfig = () => (
     </ul>
     <h3>LED Circuit</h3>
     <Figure>
-      <Figure.Image style={{ maxWidth: '800px' }} src="/images/RedTeamSEL/CircuitDiagram.png" alt="LED Circuit Diagram" />
+      <Figure.Image style={{ maxWidth: '800px' }} src="/images/RedTeamSEL/circuitDiagram.png" alt="LED Circuit Diagram" />
       <Figure.Caption className="text-center">Circuit Diagram</Figure.Caption>
     </Figure>
     <Figure>
-      <Figure.Image style={{ maxWidth: '800px' }} src="/images/RedTeamSEL/CircuitSimulation.png" alt="LED Circuit Simulation" />
+      <Figure.Image style={{ maxWidth: '800px' }} src="/images/RedTeamSEL/circuitSimulation.png" alt="LED Circuit Simulation" />
       <Figure.Caption className="text-center">
         Circuit in Lab <br />
         When the LED is on, using the PUL OUT107 5 command turns it off for 5 seconds.
