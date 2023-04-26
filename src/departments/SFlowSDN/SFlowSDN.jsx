@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Tab, Tabs } from 'react-bootstrap';
-import SDN from './SDN';
-import SFlow from './SFlow';
+import SDN from './SDN/SDN';
+import SFlow from './SFlow/SFlow';
 
 const SFlowSDN = () => (
   <Container className="py-3">
