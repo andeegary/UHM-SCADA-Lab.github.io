@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Table } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import RYUNotes from './RYUNotes';
 
 const LegacyControllerResearch = () => (
   <Container className="py-3">
@@ -25,6 +26,7 @@ const LegacyControllerResearch = () => (
           <th>Download</th>
           <th>Pros</th>
           <th>Cons</th>
+          <th>Legacy Notes</th>
         </tr>
       </thead>
       <tbody>
@@ -38,6 +40,7 @@ const LegacyControllerResearch = () => (
           <td><Link to="https://github.com/faucetsdn/ryu">Download</Link></td>
           <td>Previously used SDN Controller, the current OS-Ken framework is a fork of RYU that hasn&apos;t diverged too much</td>
           <td>Not being maintained</td>
+          <td><RYUNotes /></td>
         </tr>
         <tr>
           <td><Link to="https://githubhelp.com/superkkt/cherry">Cherry</Link></td>
@@ -49,6 +52,7 @@ const LegacyControllerResearch = () => (
           <td><Link to="https://docs.docker.com/installation/">Docker</Link><Link to="https://golang.org/doc/install">Go Language</Link></td>
           <td>-</td>
           <td>Not well documented, requires a MySQL database, written in Go</td>
+          <td>-</td>
         </tr>
         <tr>
           <td><Link to="https://floodlight.atlassian.net/wiki/spaces/floodlightcontroller/overview">Floodlight</Link></td>
@@ -60,6 +64,7 @@ const LegacyControllerResearch = () => (
           <td><Link to="https://github.com/floodlight/floodlight">Download</Link></td>
           <td>Has a Web GUI that can write to the controller, Well documented</td>
           <td>Written in Java</td>
+          <td>-</td>
         </tr>
         <tr>
           <td><Link to="https://lighty.io/">Lighty-Core (lighty.io)</Link></td>
@@ -71,6 +76,7 @@ const LegacyControllerResearch = () => (
           <td><Link to="https://github.com/PANTHEONtech/lighty">Download</Link></td>
           <td>-</td>
           <td>Written in Java, okay documentation (does not seem entry level)</td>
+          <td>-</td>
         </tr>
         <tr>
           <td><Link to="https://wiki.onosproject.org/display/ONOS/">ONOS</Link></td>
@@ -82,6 +88,7 @@ const LegacyControllerResearch = () => (
           <td>-</td>
           <td>Has CLI (ssh capability), has a Web GUI, very well documented</td>
           <td>Written in Java, may not work on a raspberry PI</td>
+          <td>-</td>
         </tr>
       </tbody>
     </Table>
