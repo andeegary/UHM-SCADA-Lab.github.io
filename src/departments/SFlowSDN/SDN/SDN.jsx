@@ -3,6 +3,7 @@ import { Container, Tab, Tabs } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import LegacyControllerResearch from './LegacyControllerResearch';
 import CurrentController from './CurrentController';
+import LabConfiguration from './LabConfiguration';
 
 const SDN = () => (
   <Container className="py-3">
@@ -19,6 +20,9 @@ const SDN = () => (
     <Tabs defaultActiveKey="currentController">
       <Tab eventKey="currentController" title="Current SDN Controller" className="py-4">
         <CurrentController />
+      </Tab>
+      <Tab eventKey="labConfiguartion" title="Lab Configuration" className="py-4">
+        <LabConfiguration />
       </Tab>
       <Tab eventKey="legacyControllerResearch" title="Legacy Controller Research" className="py-4">
         <LegacyControllerResearch />

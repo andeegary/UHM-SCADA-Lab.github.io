@@ -31,7 +31,7 @@ const CurrentController = () => (
         </tr>
       </tbody>
     </Table>
-    <p>RYU has some example programs located on <Link to="https://github.com/faucetsdn/ryu/tree/master/ryu/app">GitHub</Link>, which are great stubs for building a custom controller of our own. We initially based our programs on <Link to="https://github.com/faucetsdn/ryu/blob/master/ryu/app/simple_switch_13.py">simple_switch_13.py</Link>, which needs some slight modification to work with our physical switches in the lab. These RYU programs can work with os-ken, you will just need to rename imported methods from &quot;RYU&quot; to &quot;OS-Ken&quot;. See TODO: create new tab with changes from a base program</p>
+    <p>RYU has some example programs located on <Link to="https://github.com/faucetsdn/ryu/tree/master/ryu/app">GitHub</Link>, which are great stubs for building a custom controller of our own. We initially based our programs on <Link to="https://github.com/faucetsdn/ryu/blob/master/ryu/app/simple_switch_13.py">simple_switch_13.py</Link>, which needs some slight modification to work with our physical switches in the lab. These RYU programs can work with os-ken, you will just need to rename imported methods from &quot;RYU&quot; to &quot;OS-Ken&quot;. See the &quot;Lab Configuration&quot; tab for controller configuration changes that are needed to interact with the HP 2920-24G network switches we use in the lab.</p>
     <p>OS-Ken has a fair amount of documentation, with links to the home page and frequently visited pages below:</p>
     <ul>
       <li><Link to="https://docs.openstack.org/os-ken/latest/#top">OS-Ken Documentation</Link></li>
