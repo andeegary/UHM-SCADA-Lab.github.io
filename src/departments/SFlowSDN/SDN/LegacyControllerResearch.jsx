@@ -4,9 +4,10 @@ import { Link } from 'react-router-dom';
 
 const LegacyControllerResearch = () => (
   <Container className="py-3">
+    <h3>Legacy Controller Research</h3>
     <p> At the start of the Spring 2022 semester, everyone in the lab was assigned an SDN controller framework from the list on <Link to="https://en.wikipedia.org/wiki/List_of_SDN_controller_software">this wikipedia article</Link>. There were some basic criteria to guide our decision, such as:</p>
     <ul>
-      <li>Written in Python, or a programming language that is easy to read, easy to use, and is already known by mostly everyone in the lab.</li>
+      <li>Is written in Python, or a programming language that is easy to read, easy to use, and is already known by mostly everyone in the lab.</li>
       <li>Uses OpenFlow version 1.3, which is compatible with the HP 2920-24G network switches we use in the lab.</li>
       <li>Is lightweight such that it is able to run comfortably on a Raspberry PI, the main computing device in the lab.</li>
     </ul>
