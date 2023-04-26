@@ -1,7 +1,6 @@
 import React from 'react';
 import { Container, Tab, Tabs } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import SDNSetup from './SDNSetup';
 import LegacyControllerResearch from './LegacyControllerResearch';
 import CurrentController from './CurrentController';
 
@@ -16,7 +15,6 @@ const SDN = () => (
       <li><Link to="https://en.wikipedia.org/wiki/Software-defined_networking">SDN Explanation</Link></li>
       <li><Link to="https://opennetworking.org/">Open Networking Explanation</Link></li>
       <li><Link to="https://en.wikipedia.org/wiki/List_of_SDN_controller_software">List of SDN Platforms</Link></li>
-      <li><SDNSetup /></li>
     </ul>
     <Tabs defaultActiveKey="currentController">
       <Tab eventKey="currentController" title="Current SDN Controller" className="py-4">
