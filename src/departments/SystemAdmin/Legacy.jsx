@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 
 const Legacy = () => (
   <span>
+    <h2>Legacy</h2>
+    <p>This page contains documentation that is obsolete with the current configuration of our network.</p>
     <h2>DHCP</h2>
     <ul>
       <li>Useful commands:</li>
@@ -39,9 +41,8 @@ const Legacy = () => (
         <img src="/images/SystemAdmin/DHCPServer_fixedAddressing.png" alt="Fixed Addressing" style={{ width: '100%', maxWidth: '375px' }} />
       </ul>
     </ol>
-
+    <h2>DNS (old)</h2>
     <ul>
-      <h2>DNS (old)</h2>
       <li>Useful commands:</li>
       <ul>
         <li>sudo apt install bind9</li>
