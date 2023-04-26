@@ -4,8 +4,87 @@ import { Link } from 'react-router-dom';
 
 const LegacyControllerResearch = () => (
   <Container className="py-3">
-    <p> At the start of the Spring 2022 semester, everyone in the lab was assigned a controller from the list on <Link to="https://en.wikipedia.org/wiki/List_of_SDN_controller_software">this wikipedia article.</Link> As such, this table was originally filled in largely by students new to both the SCADA lab and software defined networking. Please be aware that software defined networking is a hard concept to fully understand, and this table may not have the most comprehensive information.</p>
-    <h4 className="pt-4">Will Not Be Using</h4>
+    <p> At the start of the Spring 2022 semester, everyone in the lab was assigned an SDN controller framework from the list on <Link to="https://en.wikipedia.org/wiki/List_of_SDN_controller_software">this wikipedia article</Link>. There were some basic criteria to guide our decision, such as:</p>
+    <ul>
+      <li>Written in Python, or a programming language that is easy to read, easy to use, and is already known by mostly everyone in the lab.</li>
+      <li>Uses OpenFlow version 1.3, which is compatible with the HP 2920-24G network switches we use in the lab.</li>
+      <li>Is lightweight such that it is able to run comfortably on a Raspberry PI, the main computing device in the lab.</li>
+    </ul>
+    <p>These frameworks are split into two categories, &quot;Potential Frameworks&quot;, which are frameworks that still have potential to be used in the lab, but haven&apos;t proved to be better than the currently used framework, and &quot;Ruled-Out Frameworks&quot;, which are frameworks that have been determined to have very little or no potential to be used in the lab.</p>
+    <h4 className="pt-4">Potential Frameworks</h4>
+    <Table striped bordered responsive="xl">
+      <thead>
+        <tr>
+          <th>Controller Name</th>
+          <th>Status</th>
+          <th>OS/Platform</th>
+          <th>Derived From</th>
+          <th>License</th>
+          <th>Developed In</th>
+          <th>Download</th>
+          <th>Pros</th>
+          <th>Cons</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><Link to="https://ryu-sdn.org/sdn_sflow.html">RYU Controller</Link></td>
+          <td>Active - Release 4.34</td>
+          <td>Ubuntu (16.04 LTS or later)</td>
+          <td>N/A</td>
+          <td>Apache 2.0</td>
+          <td>Python</td>
+          <td><Link to="https://github.com/faucetsdn/ryu">Download</Link></td>
+          <td>Previously used SDN Controller, the current OS-Ken framework is a fork of RYU that hasn&apos;t diverged too much</td>
+          <td>Not being maintained</td>
+        </tr>
+        <tr>
+          <td><Link to="https://githubhelp.com/superkkt/cherry">Cherry</Link></td>
+          <td>Active 0.14.2</td>
+          <td>Windows/OS/Linux</td>
+          <td>N/A</td>
+          <td>GPL-2.0</td>
+          <td>Go</td>
+          <td><Link to="https://docs.docker.com/installation/">Docker</Link><Link to="https://golang.org/doc/install">Go Language</Link></td>
+          <td>-</td>
+          <td>Not well documented, requires a MySQL database, written in Go</td>
+        </tr>
+        <tr>
+          <td><Link to="https://floodlight.atlassian.net/wiki/spaces/floodlightcontroller/overview">Floodlight</Link></td>
+          <td>Active-1.2</td>
+          <td>Linux, Mac OS X 10.6 or higher, Windows</td>
+          <td>OpenFlow</td>
+          <td>Apache 2.0</td>
+          <td>Java</td>
+          <td><Link to="https://github.com/floodlight/floodlight">Download</Link></td>
+          <td>Has a Web GUI that can write to the controller, Well documented</td>
+          <td>Written in Java</td>
+        </tr>
+        <tr>
+          <td><Link to="https://lighty.io/">Lighty-Core (lighty.io)</Link></td>
+          <td>Active - 15.2.0</td>
+          <td>Can run on Linux</td>
+          <td>OpenDaylight</td>
+          <td>EPL 1.0</td>
+          <td>Java</td>
+          <td><Link to="https://github.com/PANTHEONtech/lighty">Download</Link></td>
+          <td>-</td>
+          <td>Written in Java, okay documentation (does not seem entry level)</td>
+        </tr>
+        <tr>
+          <td><Link to="https://wiki.onosproject.org/display/ONOS/">ONOS</Link></td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>Java</td>
+          <td>-</td>
+          <td>Has CLI (ssh capability), has a Web GUI, very well documented</td>
+          <td>Written in Java, may not work on a raspberry PI</td>
+        </tr>
+      </tbody>
+    </Table>
+    <h4 className="pt-4">Ruled-Out Frameworks</h4>
     <Table striped bordered responsive="xl">
       <thead>
         <tr>
@@ -38,7 +117,7 @@ const LegacyControllerResearch = () => (
           <td>Apache 2.0</td>
           <td>Python</td>
           <td><Link to="https://docs.faucet.nz/en/latest/tutorials/first_time.html">Download</Link></td>
-          <td>-</td>
+          <td>Had too many dependencies, developed moved to RYU controller.</td>
         </tr>
         <tr>
           <td><Link to="https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c03967699#N10229">HPE VAN</Link></td>
@@ -77,7 +156,7 @@ const LegacyControllerResearch = () => (
           <td>N/A</td>
           <td>Apache 2.0</td>
           <td>Python/Java</td>
-          <td><Link to="https://docs.open-kilda.org/xwiki/bin/view/Installation%20Guide%20-%20v1.1.11.27%20%28November%202018%29/">Download</Link><Link to="https://github.com/telstra/open-kilda">Github</Link></td>
+          <td><Link to="https://docs.open-kilda.org/xwiki/bin/view/Installation%20Guide%20-%20v1.1.11.27%20%28November%202018%29/">Download</Link> <Link to="https://github.com/telstra/open-kilda">Github</Link></td>
           <td>Requires 256GB of storage</td>
         </tr>
         <tr>
@@ -162,83 +241,7 @@ const LegacyControllerResearch = () => (
         </tr>
       </tbody>
     </Table>
-    <h4 className="pt-4">To Be Decided</h4>
-    <Table striped bordered responsive="xl">
-      <thead>
-        <tr>
-          <th>Controller Name</th>
-          <th>Status</th>
-          <th>OS/Platform</th>
-          <th>Derived From</th>
-          <th>License</th>
-          <th>Developed In</th>
-          <th>Download</th>
-          <th>Notes</th>
-          <th>Static IP Address</th>
-          <th>Assigned To</th>
-          <th>Pros</th>
-          <th>Cons</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><Link to="https://githubhelp.com/superkkt/cherry">Cherry</Link></td>
-          <td>Active 0.14.2</td>
-          <td>Windows/OS/Linux</td>
-          <td>N/A</td>
-          <td>GPL-2.0</td>
-          <td>Go</td>
-          <td><Link to="https://docs.docker.com/installation/">Docker</Link><Link to="https://golang.org/doc/install">Go Language</Link></td>
-          <td>-</td>
-          <td>-</td>
-          <td>-</td>
-          <td>-</td>
-          <td>Not well documented, requires a MySQL database, written in Go</td>
-        </tr>
-        <tr>
-          <td><Link to="https://floodlight.atlassian.net/wiki/spaces/floodlightcontroller/overview">Floodlight</Link></td>
-          <td>Active-1.2</td>
-          <td>Linux, Mac OS X 10.6 or higher, Windows</td>
-          <td>OpenFlow</td>
-          <td>Apache 2.0</td>
-          <td>Java</td>
-          <td><Link to="https://github.com/floodlight/floodlight">Download</Link></td>
-          <td>-</td>
-          <td>-</td>
-          <td>-</td>
-          <td>Has a Web GUI that can write to the controller, Well documented</td>
-          <td>Written in Java</td>
-        </tr>
-        <tr>
-          <td><Link to="https://lighty.io/">Lighty-Core (lighty.io)</Link></td>
-          <td>Active - 15.2.0</td>
-          <td>Can run on Linux</td>
-          <td>OpenDaylight</td>
-          <td>EPL 1.0</td>
-          <td>Java</td>
-          <td><Link to="https://github.com/PANTHEONtech/lighty">Download</Link></td>
-          <td>-</td>
-          <td>-</td>
-          <td>Chase</td>
-          <td>-</td>
-          <td>Written in JAVA, okay documentation (does not seem entry level)</td>
-        </tr>
-        <tr>
-          <td><Link to="https://wiki.onosproject.org/display/ONOS/">ONOS</Link></td>
-          <td>-</td>
-          <td>-</td>
-          <td>-</td>
-          <td>-</td>
-          <td>-</td>
-          <td>-</td>
-          <td>-</td>
-          <td>-</td>
-          <td>-</td>
-          <td>Has CLI (ssh capability), has a Web GUI, very well documented</td>
-          <td>Written in Java, may not work on a raspberry PI</td>
-        </tr>
-      </tbody>
-    </Table>
+    <p>Note: these tables were originally filled in by students new to both the SCADA lab and software defined networking. Please be aware that software defined networking is a difficult concept to understand so these tables may not have the most comprehensive or accurate information.</p>
   </Container>
 );
 
