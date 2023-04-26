@@ -5,7 +5,7 @@ import { Col, Row } from 'react-bootstrap';
 const Overview = () => (
   <span>
     <h3>Welcome</h3>
-    <p>The System Administration department is responsible for the upkeep, configuration, and maintenance of Raspberry Pis and Servers. We are also responsible for assisting other departments in troubleshooting and rolling out patches to the Raspberry Pis.</p>
+    <p>The System Administration department is responsible for managing and maintaining the overall health, stability, and security of the SCADA network. This includes system configuration and maintenance for all Raspberry PIs and the Windows server, user account management, backup and disaster recovery, regular system updates, performance tuning, troubleshooting and issue resolution, documentation and reporting, system planning, and system improvement.</p>
     <p>Our team is currently made up of two EE496 students and one EE396 student.</p>
     <Row>
       <Col>
