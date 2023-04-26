@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 
-const MultiHoming = () => (
+const VLAN = () => (
   <span>
     <Container>
       <ul>
@@ -32,4 +32,4 @@ const MultiHoming = () => (
   </span>
 );
 
-export default MultiHoming;
+export default VLAN;

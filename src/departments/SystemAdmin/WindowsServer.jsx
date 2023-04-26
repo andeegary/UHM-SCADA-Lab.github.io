@@ -6,7 +6,7 @@ const WindowsServer = () => (
     <p>Windows Server 2022 is an Operating System we use to provide a number of services to our client devices. We decided to use this operating system as a way to centralize the configuration of the many Raspberry Pis we use in the lab. Some other advantages includes being able to create and use shared folders, easily create and manage users and groups, allow remote access to the network, and allow backups of client and server files.</p>
     <p>The services that we have currently implemented (as of May 2023) includes DHCP, DNS, and Windows Time. Other services we plant implement includes Active Directory and Single Sign-On</p>
     <h3><u>Dynamic Host Configuration Protocol (DHCP) Service</u></h3>
-    <p>DHCP is a network management protocol used to automatically assign an IP address to clients in a given network. The main advantage of this is to eliminate the need to manually assign a static IP address for every device on the network. Additionally, we are able to configure each scope to choose which services (i.e. DNS, W32Time, etc.) we would like to implement for that network (i.e. VLAN 3). </p>
+    <p>DHCP is a network management protocol used to automatically assign an IP address to clients in a given network. The main advantage of the DHCP service is that it offers a way to centrally manage the IP addresses in the network. This makes configuring new devices easier and makes IP address allocation more flexible. We are also able to statically assign IP addresses to devices with the use of their MAC address. This is ideal in the case where we would want reliable access to a device. For example, it would be ideal to statically assign an IP address to a database Raspberry PI, such that another device (i.e. the Machine Learning PI) would have a consistent and reliable stream of data. In the case of a power outage and restoration, the DHCP server is able to assign the same IP addresses to the devices and quickly restore the flow of data without much intervention. Additionally, we are able to edit the DHCP service configuration for each VLAN to choose which Windows services (i.e. DNS, W32Time, etc.) we would like to implement for a specific VLAN.</p>
     <h4>How to set up static ip addresses (DHCP)</h4>
     <h5>Note: DHCP is currently enabled for only VLAN 3 and VLAN 4 (as of Apr 2023). Refer to the network map for more information.</h5>
     <ol>
@@ -25,7 +25,7 @@ const WindowsServer = () => (
       <li>Make sure to update the &quot;SCADA_Switch Ports,IPs,VLANs&quot; spreadsheet.</li>
     </ol>
     <h3><u>Domain Name System (DNS) Service</u></h3>
-    <p>DNS is a naming system that translates IP addresses into domain names (Reverse Lookup) and domain names into IP addresses (Forward Lookup). This is important since web browsers use IP addresses to access the internet. Since it’s difficult for humans to keep track of IP addresses to every website they might visit (i.e. 142.250.97.106 for google.com), DNS allows users to input the domain name and makes the translation to IP address for the web browser to use.</p>
+    <p>DNS is a naming system that translates IP addresses into domain names (Reverse Lookup) and domain names into IP addresses (Forward Lookup). Because web browsers are dependent on the use of IP addresses to access the internet, it’s difficult for most people to keep track of tens to hundreds of different IP addresses that would correspond to the websites they may visit daily (i.e. typing 142.250.97.106 into the search bar instead of google.com). DNS aims to alleviate this by making it more user-friendly by having people remember the names of the websites (i.e. manoa.hawaii) and ending it with a top-level domain (i.e. .edu) instead of remembering the sequences of numbers. By using the DNS service on the Windows server, we are able to implement the same concept to the devices in our network. This means that instead of remembering the IP address of every Raspberry PI in our SCADA network, we are able to instead create a domain name that it’s more user-friendly.</p>
     <h4>How to set up DNS Lookup</h4>
     <h5>On windows directory side:</h5>
     <ol>
@@ -50,6 +50,7 @@ const WindowsServer = () => (
       <li>The pi will use the DNS server now.</li>
     </ol>
     <h3><u>Windows Time Service</u></h3>
+    <p>Windows Time Service (W32Time) is a service that allows the synchronization of time and date for all computers running the Active Directory Domain Services (AD DS). Synchronizing time across all devices in a SCADA network is important, for logging and automation purposes. For example, if a catastrophic event occurs within the network, it is important for all the device’s clock to be synchronized to a single time reference as to have a general idea of the sequence of events that might’ve led to this event, and understand its aftermaths. Additionally, a device in the network running an automation script must definitely have its time synchronized as to not create any problems in the network.</p>
     <h4>Getting Time from Server through timedatctl</h4>
     <h5>Warning: Don&apos;t use ntp since it&apos;s outdated</h5>
     <ol>
