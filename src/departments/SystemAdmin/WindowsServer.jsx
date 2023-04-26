@@ -1,10 +1,13 @@
 import React from 'react';
 
-const ActiveDirectory = () => (
+const WindowsServer = () => (
   <span>
-    <h3>Windows Active Directory</h3>
-    <p>We are using a virtual machine on Meltdown (the Mac mini).</p>
-    <h3>How to set up static ip addresses (DHCP)</h3>
+    <h3>Windows Server</h3>
+    <p>Windows Server 2022 is an Operating System we use to provide a number of services to our client devices. We decided to use this operating system as a way to centralize the configuration of the many Raspberry Pis we use in the lab. Some other advantages includes being able to create and use shared folders, easily create and manage users and groups, allow remote access to the network, and allow backups of client and server files.</p>
+    <p>The services that we have currently implemented (as of May 2023) includes DHCP, DNS, and Windows Time. Other services we plant implement includes Active Directory and Single Sign-On</p>
+    <h3><u>Dynamic Host Configuration Protocol (DHCP) Service</u></h3>
+    <p>DHCP is a network management protocol used to automatically assign an IP address to clients in a given network. The main advantage of this is to eliminate the need to manually assign a static IP address for every device on the network. Additionally, we are able to configure each scope to choose which services (i.e. DNS, W32Time, etc.) we would like to implement for that network (i.e. VLAN 3). </p>
+    <h4>How to set up static ip addresses (DHCP)</h4>
     <h5>Note: DHCP is currently enabled for only VLAN 3 and VLAN 4 (as of Apr 2023). Refer to the network map for more information.</h5>
     <ol>
       <li>Open Server Manager. </li>
@@ -21,7 +24,9 @@ const ActiveDirectory = () => (
       <li>When finished, click on the &quot;Add&quot; button.</li>
       <li>Make sure to update the &quot;SCADA_Switch Ports,IPs,VLANs&quot; spreadsheet.</li>
     </ol>
-    <h3>How to set up DNS Lookup</h3>
+    <h3><u>Domain Name System (DNS) Service</u></h3>
+    <p>DNS is a naming system that translates IP addresses into domain names (Reverse Lookup) and domain names into IP addresses (Forward Lookup). This is important since web browsers use IP addresses to access the internet. Since it’s difficult for humans to keep track of IP addresses to every website they might visit (i.e. 142.250.97.106 for google.com), DNS allows users to input the domain name and makes the translation to IP address for the web browser to use.</p>
+    <h4>How to set up DNS Lookup</h4>
     <h5>On windows directory side:</h5>
     <ol>
       <li> Open Server Manager.</li>
@@ -44,7 +49,8 @@ const ActiveDirectory = () => (
       <li>sudo service dhcpcd restart</li>
       <li>The pi will use the DNS server now.</li>
     </ol>
-    <h3>Getting Time from Server through timedatctl</h3>
+    <h3><u>Windows Time Service</u></h3>
+    <h4>Getting Time from Server through timedatctl</h4>
     <h5>Warning: Don&apos;t use ntp since it&apos;s outdated</h5>
     <ol>
       <li>Open a Terminal window on your Raspberry Pi.</li>
@@ -65,4 +71,4 @@ const ActiveDirectory = () => (
   </span>
 );
 
-export default ActiveDirectory;
+export default WindowsServer;

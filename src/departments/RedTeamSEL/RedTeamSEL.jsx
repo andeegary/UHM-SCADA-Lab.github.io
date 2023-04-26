@@ -48,7 +48,7 @@ const RedTeamSEL = () => (
         <Overview />
       </Tab>
       <Tab eventKey="factoryReset" title="Factory Reset" className="py-4">
-        <img style={{ width: '100%', maxWidth: '750px' }} src="/images/RedTeamSEL/factoryReset.png" alt="Factory Reset" />
+        <img src="/images/RedTeamSEL/factoryReset.png" alt="Factory Reset" style={{ maxWidth: '750px' }} />
       </Tab>
       <Tab eventKey="SEL451Config" title="SEL-451 Configuration" className="py-4">
         <SEL451Config />

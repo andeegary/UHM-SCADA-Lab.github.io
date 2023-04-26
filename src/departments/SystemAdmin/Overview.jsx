@@ -11,7 +11,7 @@ const Overview = () => (
       <Col>
         <h3>Current Tasks</h3>
         <ul>
-          <li>Work on Active Directory</li>
+          <li>Work on the Windows Server</li>
           <ul>
             <li>Implement Single Sign-on (SSO) using a Pluggable authentication module (PAM) module and Lightweight Directory Access Protocol (LDAP)</li>
           </ul>

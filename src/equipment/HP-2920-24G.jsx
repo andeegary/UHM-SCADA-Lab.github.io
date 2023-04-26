@@ -19,7 +19,7 @@ const HP292024G = () => {
         <Offcanvas.Body>
           <h3>HP Network Switch</h3>
           <p>Product Summary: A 24-port network switch.</p>
-          <img src="/images/Equipment/HP292024G.jpeg" alt="HP 2920-24G" style={{ maxWidth: '600px', width: '100%' }} />
+          <img src="/images/Equipment/HP292024G.jpeg" alt="HP 2920-24G" style={{ maxWidth: '600px' }} />
           <h3>Device Links</h3>
           <ul>
             <li><a href="/pdfs/HP292024G-Admin_Guide.pdf">HP OpenFlow Administrator Guide</a></li>

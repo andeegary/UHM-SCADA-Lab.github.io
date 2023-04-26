@@ -9,7 +9,7 @@ const RF = () => (
       {' '}
       <a href="/pdfs/MDSentraNET900-Manual.pdf" target="_blank" rel="noreferrer">MDS entraNET 900</a>
     </h3>
-    <img src="/images/Equipment/MDSentraNET900.png" alt="MDS entraNET 900" style={{ width: '100%', maxWidth: '500px' }} />
+    <img src="/images/Equipment/MDSentraNET900.png" alt="MDS entraNET 900" style={{ maxWidth: '500px' }} />
     <p>
       At the beginning of the Fall 2022 semester, the SCADA Lab was using the above MDS extender for radio transmissions. The main problem that was that the connection was unstable. It would lose connection and was not be able to re-establish the connection on its own. To re-establish the connection we tried unplugging and plugging in the power, ethernet, and antenna cables on the control side MDS, which did nothing. We repeated this on the production side and power cycling work to re-establish the connection.
     </p>

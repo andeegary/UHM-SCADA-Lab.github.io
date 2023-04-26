@@ -7,11 +7,11 @@ const OutputTesting = () => (
     <h5>Front Panel</h5>
     <ol>
       <li>Navigate to the Menu and enter &apos;LOCAL CONTROL&apos;</li>
-      <img style={{ width: '100%', maxWidth: '400px' }} src="/images/RedTeamSEL/output1.png" alt="Output 1" />
+      <img src="/images/RedTeamSEL/output1.png" alt="Output 1" style={{ maxWidth: '400px' }} />
       <li>Enter &apos;OUTPUT TESTING&apos;</li>
-      <img style={{ width: '100%', maxWidth: '400px' }} src="/images/RedTeamSEL/output2.png" alt="Output 2" />
+      <img src="/images/RedTeamSEL/output2.png" alt="Output 2" style={{ maxWidth: '400px' }} />
       <li>Select the Output terminal you wish to test. (Note: Polarity Dependent)</li>
-      <img style={{ width: '100%', maxWidth: '400px' }} src="/images/RedTeamSEL/output3.png" alt="Output 3" />
+      <img src="/images/RedTeamSEL/output3.png" alt="Output 3" style={{ maxWidth: '400px' }} />
       <li>Select &apos;yes&apos; to pulse the output (pulses for 1 second)</li>
       <li>Enter the Level 2 Access password (Default: TAIL)</li>
     </ol>
@@ -23,10 +23,10 @@ const OutputTesting = () => (
       <li>Enter &apos;Y&apos; to confirm</li>
       <Row className="align-items-center">
         <Col lg={6}>
-          <img style={{ width: '100%', maxWidth: '500px' }} src="/images/RedTeamSEL/output4.png" alt="Output 4" />
+          <img src="/images/RedTeamSEL/output4.png" alt="Output 4" style={{ maxWidth: '500px' }} />
         </Col>
         <Col lg={6}>
-          <img style={{ width: '100%', maxWidth: '500px' }} src="/images/RedTeamSEL/output5.png" alt="Output 5" />
+          <img src="/images/RedTeamSEL/output5.png" alt="Output 5" style={{ maxWidth: '500px' }} />
         </Col>
       </Row>
     </ol>
