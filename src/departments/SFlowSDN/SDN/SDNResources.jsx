@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const SDNResources = () => (
   <Container className="py-3">
     <h2>SDN Resources</h2>
-    <p>TODO: extend list of resources, these should focus on SDN as a hole, see &quot;Current SDN Controller&quot; tab for resources specific to OS-Ken.</p>
+    <p>TODO: extend list of resources, these should focus on SDN as a whole, see &quot;Current SDN Controller&quot; tab for resources specific to OS-Ken.</p>
     <h4 className="pt-4">Helpful Links</h4>
     <ul>
       <li><Link to="https://www.youtube.com/watch?v=Z5Gi2Bpd82M">Software Defined Network</Link></li>
