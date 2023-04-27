@@ -5,11 +5,20 @@ import { Col, Row } from 'react-bootstrap';
 const Overview = () => (
   <span>
     <h3>Welcome</h3>
-    <p>The System Administration department is responsible for managing and maintaining the overall health, stability, and security of the SCADA network. This includes system configuration and maintenance for all Raspberry PIs and the Windows server, user account management, backup and disaster recovery, regular system updates, performance tuning, troubleshooting and issue resolution, documentation and reporting, system planning, and system improvement.</p>
+    <Row>
+      <Col md={8}>
+        <p>The System Administration department is responsible for managing and maintaining the overall health, stability, and security of the SCADA network. This includes system configuration and maintenance for all Raspberry PIs and the Windows server, user account management, backup and disaster recovery, regular system updates, performance tuning, troubleshooting and issue resolution, documentation and reporting, system planning, and system improvement.</p>
+      </Col>
+      <Col md={4}>
+        <img src="/images/SystemAdmin/Overview_Server_Room.jpg" alt="Server Room" style={{ maxWidth: '80%' }} />
+      </Col>
+    </Row>
     <p>Our team is currently made up of two EE496 students and one EE396 student.</p>
+    <h3>Our Goal for Spring 2023</h3>
+    <p>Our goal for spring 2023 is to stand up a windows server that would optimize the configuration process for the Raspberry Pis and other devices in the lab. The services we will choose to implement are: Active Directory, DHCP, DNS, and NTP. If time permits, we will also implement single sign-on using a PAM module with LDAP.</p>
     <Row>
       <Col>
-        <h3>Current Tasks</h3>
+        <h3>Current Tasks (Spring 2023)</h3>
         <ul>
           <li>Work on the Windows Server</li>
           <ul>
