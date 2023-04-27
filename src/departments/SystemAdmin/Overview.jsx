@@ -14,8 +14,10 @@ const Overview = () => (
       </Col>
     </Row>
     <p>Our team is currently made up of two EE496 students and one EE396 student.</p>
+    <hr />
     <h3>Our Goal for Spring 2023</h3>
     <p>Our goal for spring 2023 is to stand up a windows server that would optimize the configuration process for the Raspberry Pis and other devices in the lab. The services we will choose to implement are: Active Directory, DHCP, DNS, and NTP. If time permits, we will also implement single sign-on using a PAM module with LDAP.</p>
+    <hr />
     <Row>
       <Col>
         <h3>Current Tasks (Spring 2023)</h3>
@@ -53,6 +55,7 @@ const Overview = () => (
         </ul>
       </Col>
     </Row>
+    <hr />
     <h3>Useful Commands and Resources</h3>
     <ul>
       <li>Note: Commands prefixed with # require root access, and commands prefixed with $ do not require root access.</li>
