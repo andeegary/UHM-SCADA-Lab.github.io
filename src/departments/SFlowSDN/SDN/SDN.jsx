@@ -8,6 +8,7 @@ import SDNResources from './SDNResources';
 
 const SDN = () => (
   <Container className="py-3">
+    <p>TODO: add a nice picture here</p>
     <Tabs defaultActiveKey="overview">
       <Tab eventKey="overview" title="SDN Overview" className="py-4">
         <SDNOverview />

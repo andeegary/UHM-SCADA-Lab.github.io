@@ -5,15 +5,12 @@ import { Link } from 'react-router-dom';
 const SDNOverview = () => (
   <Container className="py-3">
     <h2>SDN Overview</h2>
-    <h4>Overview</h4>
-    <p>An SDN is a <Link to="https://www.youtube.com/watch?v=Z5Gi2Bpd82M">Software Defined Network</Link>. An SDN Controller is how we dictate how it behaves.</p>
-    <h4 className="pt-4">Helpful Links</h4>
-    <ul>
-      <li><Link to="https://en.wikipedia.org/wiki/OpenFlow">Openflow Explanation</Link></li>
-      <li><Link to="https://en.wikipedia.org/wiki/Software-defined_networking">SDN Explanation</Link></li>
-      <li><Link to="https://opennetworking.org/">Open Networking Explanation</Link></li>
-      <li><Link to="https://en.wikipedia.org/wiki/List_of_SDN_controller_software">List of SDN Platforms</Link></li>
-    </ul>
+    <h4>What is SDN?</h4>
+    <p>SDN, or Software Defined Networking, is simply a tool to manage networks. At it&apos;s core, all Software Defined Networking allows you to do is to create software that can control the forwarding happening inside a network switch. SDN has the capability for network administrators to create complex, software-based network management devices, such as routers, load balancers, and firewalls. The way that SDN is implemented on a network switch, is typically done through the use of OpenFlow, which is a communications protocol that enables interaction with the forwarding plane, the part of the switch which forwards packets to destinations [1].</p>
+    <h4>Our Use of SDN</h4>
+    <p>Without SDN or the enabling of OpenFlow, every time a network switch receives a packet, it will forward it to it&apos;s destination with little to no &quot;thinking&quot;. </p>
+    <h4>References</h4>
+    <p>[1] C. Craven, “What Is OpenFlow? Definition and How it Relates to SDN,” sdxcentral, Aug. 25, 2013. <Link to="https://www.sdxcentral.com/networking/sdn/definitions/what-the-definition-of-software-defined-networking-sdn/what-is-openflow/">https://www.sdxcentral.com/networking/sdn/definitions/what-the-definition-of-software-defined-networking-sdn/what-is-openflow/</Link> (accessed Apr. 26, 2023).</p>
   </Container>
 );
 
