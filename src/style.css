@@ -58,14 +58,8 @@ li.nav-item button[role=tab].active {
   color: white;
 }
 
-#ImageCarousel img {
+img {
   width: 100%;
-  overflow: hidden;
-}
-
-#SEL311B img {
-  width: 100%;
-  max-width: 500px;
 }
 
 iframe {
@@ -88,6 +82,10 @@ iframe {
   margin: 1rem;
 }
 
-.nmap {
-  padding-top: 20px;
+ul {
+  list-style: disc;
+}
+
+ol h5:not(:first-child) li {
+  padding-top: 1rem;
 }

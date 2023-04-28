@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 
-const MultiHoming = () => (
+const VLAN = () => (
   <span>
     <Container>
       <ul>
@@ -16,12 +16,12 @@ const MultiHoming = () => (
       <ol>
         <li>Create file &apos;vlans&apos; in dir /etc/network/interfaces.d/vlans to make virtual NICs for each VLAN</li>
         <ul>
-          <img src="/images/SystemAdmin/MultiHoming_vlans.png" alt="VLANs" style={{ width: '100%', maxWidth: '375px' }} />
+          <img src="/images/SystemAdmin/MultiHoming_vlans.png" alt="VLANs" style={{ maxWidth: '375px' }} />
           <p>note: the standard format is &lt;physicalNIC&gt;.&lt;PVID&gt; where physicalNIC is the physical NIC name and PVID (port VLAN ID) is the ID for the VLAN the NIC is for</p>
         </ul>
         <li>If a static IP address is being used, the &apos;dhcpcd.conf&apos; file must be updated</li>
         <ul>
-          <img src="/images/SystemAdmin/MultiHoming_dhcpcd.png" alt="dhcpcd" style={{ width: '100%', maxWidth: '375px' }} />
+          <img src="/images/SystemAdmin/MultiHoming_dhcpcd.png" alt="dhcpcd" style={{ maxWidth: '375px' }} />
         </ul>
         <li>Restart the networking service using &apos;sudo systemctl restart networking&apos;</li>
         <li>
@@ -32,4 +32,4 @@ const MultiHoming = () => (
   </span>
 );
 
-export default MultiHoming;
+export default VLAN;

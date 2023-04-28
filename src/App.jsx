@@ -13,7 +13,7 @@ import Configuration from './pages/Configuration';
 import Departments from './departments/Departments';
 import Network from './departments/Network';
 import SystemAdmin from './departments/SystemAdmin/SystemAdmin';
-import KnowledgeManagement from './departments/KnowledgeManagement';
+import KnowledgeManagement from './departments/KnowledgeManagement/KnowledgeManagement';
 import SNMPNOC from './departments/SNMPNOC';
 import SFlowSDN from './departments/SFlowSDN/SFlowSDN';
 import MLCurriculum from './departments/MLCurriculum/MLCurriculum';

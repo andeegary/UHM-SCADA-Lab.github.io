@@ -3,16 +3,16 @@ import { Container, Tab, Tabs } from 'react-bootstrap';
 import Overview from './Overview';
 import Inventory from './Inventory';
 import PiBringUp from './PiBringUp';
-import MultiHoming from './MultiHoming';
-import DHCPServer from './DHCPServer';
-import DNSServer from './DNSServer';
+import VLAN from './VLAN';
 import Miscellaneous from './Miscellaneous';
-import ActiveDirectory from './ActiveDirectory';
+import WindowsServer from './WindowsServer';
+import Debian from './Debian';
 import GitHubTutorial from './GitHubTutorial';
+import Legacy from './Legacy';
 
 const SystemAdmin = () => (
-  <Container id="SystemAdmin" className="py-3">
-    <h1>Linux System Admin</h1>
+  <Container className="py-3">
+    <h1>System Admin</h1>
     <Tabs defaultActiveKey="overview">
       <Tab eventKey="overview" title="Overview" className="py-4">
         <Overview />
@@ -23,23 +23,23 @@ const SystemAdmin = () => (
       <Tab eventKey="bringUp" title="Pi Bring Up" className="py-4">
         <PiBringUp />
       </Tab>
-      <Tab eventKey="multiHoming" title="MultiHoming" className="py-4">
-        <MultiHoming />
+      <Tab eventKey="VLAN" title="VLAN" className="py-4">
+        <VLAN />
       </Tab>
-      <Tab eventKey="DHCPServer" title="DHCP Server" className="py-4">
-        <DHCPServer />
+      <Tab eventKey="WindowsServer" title="Windows Server" className="py-4">
+        <WindowsServer />
       </Tab>
-      <Tab eventKey="DNSServer" title="DNS Server" className="py-4">
-        <DNSServer />
-      </Tab>
-      <Tab eventKey="ActiveDirectory" title="Active Directory" className="py-4">
-        <ActiveDirectory />
+      <Tab eventKey="Debian" title="Debian" className="py-4">
+        <Debian />
       </Tab>
       <Tab eventKey="GitHubTutorial" title="GitHub Tutorial" className="py-4">
         <GitHubTutorial />
       </Tab>
       <Tab eventKey="Miscellaneous" title="Miscellaneous" className="py-4">
         <Miscellaneous />
+      </Tab>
+      <Tab eventKey="Legacy" title="Legacy" className="py-4">
+        <Legacy />
       </Tab>
     </Tabs>
   </Container>
